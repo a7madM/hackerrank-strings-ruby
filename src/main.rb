@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative('./two_characters')
 require_relative('./caesar_cipher')
 require_relative('./hackerrank_in_strings')
@@ -19,6 +21,6 @@ end
 def two_characters
   two_characters = TwoCharacters.new
   string = two_characters.input
-  result = two_characters.solve_problem(string)
+  two_characters.solve_problem(string)
 end
 # two_characters
