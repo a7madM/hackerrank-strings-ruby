@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require_relative('./two_characters')
 require_relative('./caesar_cipher')
 def caesar_cipher
@@ -9,17 +7,10 @@ def caesar_cipher
   puts encrypted
 end
 
-def testTwoCharacters
-  twoCharacters = TwoCharacters.new
-  string = twoCharacters.input
-
-  result = twoCharacters.solve_problem(string)
-
-  if twoCharacters.valid(result)
-    puts result.length
-  else
-    puts 0
-  end
+def two_characters
+  two_characters = TwoCharacters.new
+  string = two_characters.input
+  result = two_characters.solve_problem(string)
 end
-caesar_cipher
-# testTwoCharacters
+# caesar_cipher
+two_characters
